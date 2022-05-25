@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CEBD89A7-879D-46CC-A9D0-98C068614916}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ASTBBWindows</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Lib_Source\;$(SolutionDir)Lib_Source\Out\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info\;$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Lib_Source\;$(SolutionDir)Lib_Source\Out\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info\;$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Lib_Source\;$(SolutionDir)Lib_Source\Out\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info\;$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Lib_Source\;$(SolutionDir)Lib_Source\Out\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info\;$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ASTBBWINDOWS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_DEVELOPMENT;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"
+
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;ASTBBWINDOWS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_DEVELOPMENT;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"
+
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ASTBBWINDOWS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_DEVELOPMENT;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"
+
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;ASTBBWINDOWS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_DEVELOPMENT;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"
+
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+
+echo F | xcopy /Y "$(OutDir)$(TargetName).lib" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetName).lib"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lib_Source\active_map.c" />
+    <ClCompile Include="..\Lib_Source\active_map_aes128.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi128.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi16.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi176.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi256.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi32.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_craft64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_led64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_midori64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_skinny.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\aes128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\craft64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\fly64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\gift128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\gift64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\led64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\midori64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\pipo64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\present128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\present64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\rectangle64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\sbmn_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\sbpn_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\skinny128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\skinny64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\spongent176_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_omega.c" />
+    <ClCompile Include="..\Lib_Source\prep_dc.c" />
+    <ClCompile Include="..\Lib_Source\prep_lc.c" />
+    <ClCompile Include="..\Lib_Source\printout.c" />
+    <ClCompile Include="..\Lib_Source\SPN_Best_Differential_Prob_Search.c" />
+    <ClCompile Include="..\Lib_Source\SPN_Best_Linear_Corr_Search.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib_Source\active_map.h" />
+    <ClInclude Include="..\Lib_Source\bit_perm_opt.h" />
+    <ClInclude Include="..\Lib_Source\dif_prob.h" />
+    <ClInclude Include="..\Lib_Source\lin_corr.h" />
+    <ClInclude Include="..\Lib_Source\Out\astbb.h" />
+    <ClInclude Include="..\Lib_Source\printout.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

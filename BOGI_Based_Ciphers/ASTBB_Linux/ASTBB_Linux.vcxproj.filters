@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{80f5cba9-b3ff-4f9a-b0c8-e817bf3587be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Out">
+      <UniqueIdentifier>{a5adad4e-d1dd-41db-a21b-39bcf8bb90ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\In">
+      <UniqueIdentifier>{dd45ba55-8c29-4b25-8ec6-e65007b5deb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3d7738c3-082d-4cf3-96b3-d9aaecdbfbcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Linear Trail">
+      <UniqueIdentifier>{88ca2c87-301e-4786-b687-49dac89ae9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Differential Trail">
+      <UniqueIdentifier>{cdf6320d-ab73-477d-bd17-19306d364875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cipher Info">
+      <UniqueIdentifier>{efc25604-c4ff-4f03-bfda-ad5ba315a27d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Active Map">
+      <UniqueIdentifier>{9e4e364a-6507-40d3-9e62-186f34f35e83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lib_Source\active_map.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\prep_dc.c">
+      <Filter>Source Files\Differential Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\SPN_Best_Differential_Prob_Search.c">
+      <Filter>Source Files\Differential Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\prep_lc.c">
+      <Filter>Source Files\Linear Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\SPN_Best_Linear_Corr_Search.c">
+      <Filter>Source Files\Linear Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi64.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi16.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi32.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi128.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi176.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi256.c">
+      <Filter>Source Files\Active Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\printout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi_common_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib_Source\active_map.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\bit_perm_opt.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\dif_prob.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\lin_corr.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\printout.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\Out\astbb.h">
+      <Filter>Header Files\Out</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\bogi_common_info.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

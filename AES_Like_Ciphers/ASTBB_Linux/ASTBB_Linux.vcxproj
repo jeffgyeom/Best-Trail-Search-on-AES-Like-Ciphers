@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6239d78b-1340-48fd-8284-05a6e72cb671}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>ASTBB_Linux</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>8</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>16</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>8</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>16</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>8</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>16</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>8</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <IncludePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Out;$(SolutionDir)Lib_Source\Cipher_Info;</IncludePath>
+    <SourcePath>$(SolutionDir)Lib_Source;$(SolutionDir)Lib_Source\Cipher_Info</SourcePath>
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <MultiProcNumber>16</MultiProcNumber>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lib_Source\active_map.c" />
+    <ClCompile Include="..\Lib_Source\active_map_aes128.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi128.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi16.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi176.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi256.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi32.c" />
+    <ClCompile Include="..\Lib_Source\active_map_bogi64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_craft64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_led64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_midori64.c" />
+    <ClCompile Include="..\Lib_Source\active_map_skinny.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\aes128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_omega.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\craft64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\fly64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\gift128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\gift64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\led64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\midori64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\pipo64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\present128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\present64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\rectangle64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\sbmn_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\sbpn_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\skinny128_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\skinny64_info.c" />
+    <ClCompile Include="..\Lib_Source\Cipher_Info\spongent176_info.c" />
+    <ClCompile Include="..\Lib_Source\prep_dc.c" />
+    <ClCompile Include="..\Lib_Source\prep_lc.c" />
+    <ClCompile Include="..\Lib_Source\printout.c" />
+    <ClCompile Include="..\Lib_Source\SPN_Best_Differential_Prob_Search.c" />
+    <ClCompile Include="..\Lib_Source\SPN_Best_Linear_Corr_Search.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib_Source\active_map.h" />
+    <ClInclude Include="..\Lib_Source\bit_perm_opt.h" />
+    <ClInclude Include="..\Lib_Source\dif_prob.h" />
+    <ClInclude Include="..\Lib_Source\lin_corr.h" />
+    <ClInclude Include="..\Lib_Source\Out\astbb.h" />
+    <ClInclude Include="..\Lib_Source\printout.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <UnrollLoops>true</UnrollLoops>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);_DEVELOPMENT</PreprocessorDefinitions>
+      <AdditionalOptions>-W"no-unused-function" -W"no-unused-variable" -W"no-sign-conversion"  -W"no-conversion" %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeOptimization>true</LinkTimeOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <UnrollLoops>true</UnrollLoops>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);_DEVELOPMENT</PreprocessorDefinitions>
+      <AdditionalOptions>-W"no-unused-function" -W"no-unused-variable" -W"no-sign-conversion"  -W"no-conversion" %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeOptimization>true</LinkTimeOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <UnrollLoops>true</UnrollLoops>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);_DEVELOPMENT</PreprocessorDefinitions>
+      <AdditionalOptions>-W"no-unused-function" -W"no-unused-variable" -W"no-sign-conversion"  -W"no-conversion" %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeOptimization>true</LinkTimeOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <UnrollLoops>true</UnrollLoops>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);_DEVELOPMENT</PreprocessorDefinitions>
+      <AdditionalOptions>-W"no-unused-function" -W"no-unused-variable" -W"no-sign-conversion"  -W"no-conversion" %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeOptimization>true</LinkTimeOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>;_DEVELOPMENT</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PreprocessorDefinitions>;_DEVELOPMENT</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>;_DEVELOPMENT</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>;_DEVELOPMENT</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"
+echo F | xcopy /Y "$(TargetPath)" "$(SolutionDir)\ASTBB_Wrapper\ASTBB\$(PlatformTarget)\$(Configuration)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

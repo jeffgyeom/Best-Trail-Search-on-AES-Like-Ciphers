@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{80f5cba9-b3ff-4f9a-b0c8-e817bf3587be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Out">
+      <UniqueIdentifier>{a5adad4e-d1dd-41db-a21b-39bcf8bb90ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\In">
+      <UniqueIdentifier>{dd45ba55-8c29-4b25-8ec6-e65007b5deb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3d7738c3-082d-4cf3-96b3-d9aaecdbfbcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Linear Trail">
+      <UniqueIdentifier>{88ca2c87-301e-4786-b687-49dac89ae9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Differential Trail">
+      <UniqueIdentifier>{cdf6320d-ab73-477d-bd17-19306d364875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{9e4e364a-6507-40d3-9e62-186f34f35e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cipher Info">
+      <UniqueIdentifier>{efc25604-c4ff-4f03-bfda-ad5ba315a27d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cipher Info\bogi_omega_variants">
+      <UniqueIdentifier>{2f523684-6f2e-4bf1-9c4f-1e9e80d7bf61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\aes128_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\craft64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\fly64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\gift64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\gift128_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\midori64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\present64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\present128_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\rectangle64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\sbmn_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\sbpn_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\skinny64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\skinny128_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\spongent176_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\printout.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\prep_dc.c">
+      <Filter>Source Files\Differential Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\SPN_Best_Differential_Prob_Search.c">
+      <Filter>Source Files\Differential Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\prep_lc.c">
+      <Filter>Source Files\Linear Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\SPN_Best_Linear_Corr_Search.c">
+      <Filter>Source Files\Linear Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_omega.c">
+      <Filter>Source Files\Cipher Info\bogi_omega_variants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_omega.c">
+      <Filter>Source Files\Cipher Info\bogi_omega_variants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi64.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi128_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi16.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi16_omega.c">
+      <Filter>Source Files\Cipher Info\bogi_omega_variants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_omega.c">
+      <Filter>Source Files\Cipher Info\bogi_omega_variants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi32_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi32.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi128.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_craft64.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_midori64.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_skinny.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\pipo64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_aes128.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_omega.c">
+      <Filter>Source Files\Cipher Info\bogi_omega_variants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_omega.c">
+      <Filter>Source Files\Cipher Info\bogi_omega_variants</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi176_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\bogi256_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi176.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_bogi256.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\Cipher_Info\led64_info.c">
+      <Filter>Source Files\Cipher Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_Source\active_map_led64.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib_Source\active_map.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\bit_perm_opt.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\dif_prob.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\lin_corr.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\printout.h">
+      <Filter>Header Files\In</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_Source\Out\astbb.h">
+      <Filter>Header Files\Out</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
